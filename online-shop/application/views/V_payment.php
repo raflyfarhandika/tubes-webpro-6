@@ -123,7 +123,7 @@
 }
 
 body {
-    background-color: #d7f7ff;
+    background-color: #71bc78;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -137,18 +137,18 @@ body {
 }
 
 .wrapper h2 {
-    background-color: #fcfcfc;
-    color: #21cdd3;
+    background-color: none;
+    color: burlywood;
     font-size: 24px;
     padding: 10px;
     margin-bottom: 8px;
     text-align: center;
-    border: 1px dashed #21cdd3;
+    border: none
 }
 
 .wrapper h4 {
     padding-bottom: 5px;
-    color: #21cdd3;
+    color: burlywood;
 }
 
 .input_group {
@@ -184,10 +184,10 @@ body {
 
 .input_box .name:focus,
 .dob:focus {
-    -webkit-box-shadow: 0 0 2px 1px #21cdd3;
-    -moz-box-shadow: 0 0 2px 1px #21cdd3;
-    box-shadow: 0 0 2px 1px #21cdd3;
-    border: 1px solid #21cdd3;
+    -webkit-box-shadow: 0 0 2px 1px burlywood;
+    -moz-box-shadow: 0 0 2px 1px burlywood;
+    box-shadow: 0 0 2px 1px burlywood;
+    border: 1px solid burlywood;
 }
 
 .input_box .icon {
@@ -200,7 +200,7 @@ body {
     left: 0px;
     bottom: 0px;
     color: #333;
-    background-color: #f1f1f1;
+    background-color: burlywood;
     border-radius: 2px 0 0 2px;
     transition: 0.3s;
     font-size: 20px;
@@ -210,9 +210,9 @@ body {
 }
 
 .name:focus+.icon {
-    background-color: #21cdd3;
+    background-color: burlywood;
     color: #fff;
-    border-right: 1px solid #21cdd3;
+    border-right: 1px solid burlywood;
     border: none;
     transition: 1s;
 }
@@ -224,7 +224,7 @@ body {
     background-color: #fcfcfc;
     transition: 0.3s;
     outline: none;
-    border: 1px solid #c0bfbf;
+    border: 1px solid burlywood;
     border-radius: 3px;
 }
 
@@ -239,7 +239,7 @@ body {
     display: inline-block;
     float: left;
     text-align: center;
-    border: 1px solid #c0bfbf;
+    border: 1px solid burlywood;
 }
 
 .input_box label:first-of-type {
@@ -254,14 +254,14 @@ body {
 }
 
 .radio:checked+label {
-    background-color: #21cdd3;
+    background-color: burlywood;
     color: #fff;
     transition: 0.5s;
 }
 
 .input_box button {
     width: 100%;
-    background-color: #21cdd3;
+    background-color: burlywood;
     border: none;
     color: #fff;
     padding: 15px;
@@ -273,7 +273,7 @@ body {
 
 .input_box button:hover {
     cursor: pointer;
-    background-color: #05b1a3;
+    background-color: green;
 }
 </style>
 </body>
