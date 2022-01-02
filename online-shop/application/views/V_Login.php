@@ -11,19 +11,19 @@
 
     <div class="container">
         <div class="img">
-            <img src="assets/image/Kopi.svg">
+            <img src="<?=site_url()?>assets/image/Kopi.svg">
         </div>
         <div class="login-content">
-            <form action="index.html">
-                <img src="assets/image/akun.gif">
+            <form action="<?=site_url('auth/process')?>" method="post">
+                <img src="<?=site_url()?>assets/image/akun.gif">
                 <h2 class="title">LOGIN</h2>
                 <div class="input-div one">
                     <div class="i">
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="div">
-                        <h5>Username</h5>
-                        <input type="text" class="input">
+                        <h5>Email</h5>
+                        <input type="text" class="input" name="email">
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -32,11 +32,11 @@
                     </div>
                     <div class="div">
                         <h5>Password</h5>
-                        <input type="password" class="input">
+                        <input type="password" class="input" name="password">
                     </div>
                 </div>
                 <a href="#">Forgot Password?</a>
-                <input type="submit" class="btn" value="Login">
+                <input type="submit" class="btn" value="login" name="login">
             </form>
         </div>
         <style type="text/css">
@@ -261,7 +261,7 @@
             }
         </style>
     </div>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="<?=site_url()?>assets/js/main.js"></script>
 </body>
 
 </html>
