@@ -9,7 +9,7 @@ class Auth extends CI_Controller {
         $this->load->library('session');
     }
         
-    public function login()
+    public function index()
     {
         $this->load->view('V_Login');
     }
@@ -33,7 +33,7 @@ class Auth extends CI_Controller {
             } else {
                 echo "<script> 
                         alert('Login Gagal, email / password salah');
-                        window.location='".site_url('auth/login')."';
+                        window.location='".site_url('auth')."';
                       </script>";
             }
         }

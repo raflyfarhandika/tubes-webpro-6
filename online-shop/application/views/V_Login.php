@@ -37,6 +37,7 @@
                 </div>
                 <a href="#">Forgot Password?</a>
                 <input type="submit" class="btn" value="login" name="login">
+                <p style="margin-top:10px">Belum punya akun? <a href="<?php echo base_url('registrasi') ?>">Daftar</a></p> 
             </form>
         </div>
         <style type="text/css">
@@ -200,6 +201,15 @@
                 transition: .3s;
             }
             
+            p {
+                display: block;
+                text-align: right;
+                text-decoration: none;
+                color: #999;
+                font-size: 0.9rem;
+                transition: .3s;
+            }
+
             a:hover {
                 color: #38d39f;
             }

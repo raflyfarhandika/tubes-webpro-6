@@ -10,7 +10,7 @@ class Registrasi extends CI_Controller {
         $this->load->library('session');
     }
 
-    public function registrasi()
+    public function index()
     {
         $this->load->view('V_registrasi');
     }
@@ -21,8 +21,8 @@ class Registrasi extends CI_Controller {
         $tanggal_lahir = $this->input->post('tanggal_lahir');
         $tempat_lahir = $this->input->post('tempat_lahir');
         $gender = $this->input->post('gender');
-        $no_hp = $this->input->post('no_hp');
-        $no_ktp = $this->input->post('no_ktp');
+        $nomor_hp = $this->input->post('no_hp');
+        $nomor_ktp = $this->input->post('no_ktp');
         $asal_kota = $this->input->post('asal_kota');
         $email = $this->input->post('email');
         $password = $this->input->post('password');
@@ -37,15 +37,15 @@ class Registrasi extends CI_Controller {
                 'tanggal_lahir'	=> $tanggal_lahir,
                 'tempat_lahir' => $tempat_lahir,
                 'gender' => $gender,
-                'no_hp' => $no_hp,
-                'no_ktp' => $no_ktp,
+                'nomor_hp' => $nomor_hp,
+                'nomor_ktp' => $nomor_ktp,
                 'asal_kota' => $asal_kota,
                 'email' => $email,
                 'password' => $password
             );
             $result = $this->M_Registrasi->insert_new_data($data);
             if($result){
-                redirect(site_url('auth/login'));
+                redirect(site_url('auth'));
             } else {
                 $data['error_message'] = 'Error';
                 $this->load->view('V_registrasi', $data);
